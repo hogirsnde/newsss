@@ -1,0 +1,232 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* ------------------------------------------------------------------------------ */
+.header-fixture{
+  width: 100%;
+  padding: 0 50px;
+  margin-top: 85px;
+  background: url("./HintergrundSpieler.avif");
+background-size: cover;
+height: 426px;
+display: flex;
+align-items: center;
+margin-top: 60px;
+justify-content: space-between;
+}
+.header-fixture .left {
+  color:  white;
+}
+.header-fixture .left h1{
+  font-family: Noto Sans;
+font-size: 50px;
+font-weight: 700;
+line-height: 52px;
+letter-spacing: 0em;
+text-align: center;
+}
+.header-fixture .left p{
+  font-family: Noto Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+opacity: .8;  
+}
+.header-fixture .right img{
+  width: 218px;
+  height: 218px;
+  
+  border-radius: 199px;
+}
+
+
+@media screen and (max-width:550px){
+  .header-fixture{
+    width: 100%;
+    padding: 0 0px;
+}
+.header-fixture{
+flex-direction: column-reverse;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.header-fixture .left h1 {
+  font-size: 24px;
+}
+.all-fixture .header-fixture .left p {
+  font-size: 16px; 
+  text-align: center;
+}
+
+
+}
+
+/* ---------------------------- */
+
+.LoadMore{
+  padding: 10px 60px;
+  border: 0;
+  outline: 0;
+  color: white;
+  background-color: brown;
+  border-radius: 2px;
+  margin: 20px 0;
+}
+.LoadMore:hover{
+  color: brown;
+  background-color: aliceblue;
+}
+.all_news_last {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90%;
+  margin: 50px auto;
+  gap: 30px 10px;
+}
+.all_news_last .news{
+  background:url("./HintergrundSpieler.avif");
+  background-position: cover;
+  background-position:center;
+  color: white;
+  width: 32%;
+  cursor: pointer;
+  height: 350px;
+}
+.all_news_last .news img{
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+.all_news_last .news .text{
+  width: 100%;
+height: 30%;
+}
+.all_news_last .news .text .h{
+  display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 95%;
+   margin: auto;
+}
+.all_news_last .news .text p{
+  width: 95%;
+  margin: 10px auto;
+  font-size: 17px;
+}
+
+.all_news_last .newsone{
+  width: 100% !important;
+  height: 650px !important;
+  background: none;
+  position: relative;
+}
+.all_news_last .newsone img{
+  width: 100% !important;
+position: absolute !important;
+filter:opacity(.9);
+height: 100% !important;
+top: 0;
+left: 0;
+}
+.all_news_last .newsone .text{
+  position: absolute;
+  z-index: 22;
+  bottom: 0%;
+  width: 100%;
+  height: 20%;
+  -webkit-box-shadow: inset 0px -52px 291px -11px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 0px -52px 291px -11px rgba(0,0,0,0.75);
+  box-shadow: inset 0px -52px 291px -11px rgba(0,0,0,0.1);
+  
+  color: white;
+}
+
+.all_news_last .newsone .text h3{
+  font-size: 28px;
+}
+.all_news_last .newsone .text span{
+  font-size: 20px;
+}
+.all_news_last .newsone .text p{
+  font-size: 20px;
+}
+
+@media screen and (max-width:1000px) {
+  .all_news_last .news{
+
+    color: white;
+    width: 45%;
+    height: 350px ;
+  }
+  .all_news_last .newsone .text h3{
+    font-size: 24px;
+  }
+  .all_news_last .newsone .text span{
+    font-size: 17px;
+  }
+  .all_news_last .newsone .text p{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width:700px) {
+  .all_news_last {
+    width: 95%;
+    margin: 0px auto ;
+  }
+  .all_news_last .news{
+    display: flex;
+    width: 100%;
+    height: 120px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .all_news_last .news img{
+    width: 25%;
+    height: 100%;
+  }
+  .all_news_last .newsone .text p{
+display: none;
+  }
+  .all_news_last .news .h{
+    padding-top: 10px;
+  }
+  .all_news_last .news p{
+    padding-top: 10px;
+  }
+
+  .all_news_last .news.text{
+    width: 65%;
+    height: 100%;
+    z-index: 3333;
+  }
+
+
+  .all_news_last .newsone{
+    width: 100% !important;
+    height: 250px !important;
+  margin: 10px auto;
+  }
+  .all_news_last .newsone .text h3{
+    margin: 3px 0;
+    font-size: 17px;
+  }
+  .all_news_last .newsone .text span{
+    font-size: 17px;
+    margin: 3px 0;
+
+  }
+  .all_news_last .newsone .text p{
+    font-size: 16px;
+  }
+}
